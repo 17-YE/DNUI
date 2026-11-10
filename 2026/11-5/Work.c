@@ -83,7 +83,7 @@
 //	return 0;
 //}
 
-//Q4  Ò¶¹óå¹  26003150217 
+//Q4
 //#include<stdio.h>
 //int main()
 //{
