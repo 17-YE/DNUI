@@ -1,65 +1,31 @@
-//#include<stdio.h>
-//int main()
-//{
-//	int i = 0;
-//	int a = 0;
-//	for(i = 1;i <= 100;i++)
-//	{
-//		if(i % 3 != 0)
-//		{
-//			printf("%2d ",i);
-//			a++;
-//			if(a % 10 == 0)
-//			{
-//				printf("\n");
-//			}
-//		}
-//	 } 
-//	return 0;
-//} 
-
-//#include<stdio.h>
-//void funl(int x,int y)
-//{
-//  	printf("sum is %d\n",x+y); 
-//}
-//int main()
-//{	
-//	int a,b;
-//	scanf("%d %d",&a,&b);
-//	funl(a,b);
-//	printf("program ends here");
-//	return 0;
-//}
-
-//#include<stdio.h>
-//int pf(int x)
-//{
-//	return x * x;
-//}
-//int main()
-//{
-//	int a = 0;
-//	scanf("%d",&a);
-//	a = pf(a);
-//	printf("%d",a);
-//	return 0;
-//}
-
-//#include <stdio.h>
-//float AeraCalcu (float radius)
-//{
-//	float area = 0;
-//	area = 3.14 * radius * radius;
-//	return area;
-//}
-//int main() 
-//{
-//    float radius;
-//    float area;
-//    printf("Enter the radius of the circle: ");
-//    scanf("%f", &radius);
-//	area =AeraCalcu (radius);
-//    printf("The area of the circle is: %.2f\n", area);
-//    return 0;
-//}
+#include <stdio.h>
+#include <windows.h> // 包含Sleep()函数的头文件
+int main() {
+    int seconds;    
+    // 提示用户输入倒计时秒数
+    printf("请输入倒计时秒数: ");
+    scanf("%d", &seconds);    
+    // 确保输入的是正数
+    if (seconds <= 0) {
+        printf("请输入一个正整数!\n");
+        return 1;
+    }    
+    // 倒计时循环
+    while (seconds >= 0) {
+        // 清除当前行并打印剩余时间
+        printf("\r剩余时间: %5d 秒", seconds);
+        fflush(stdout); // 刷新输出缓冲区，确保立即显示
+        
+        // 如果倒计时结束，退出循环
+        if (seconds == 0) {
+            break;
+        }        
+        // 等待1秒
+        Sleep(1000); // Sleep函数的参数单位是毫秒，1000毫秒 = 1秒        
+        // 时间递减
+        seconds--;
+    }    
+    // 倒计时结束提示
+    printf("\n倒计时结束!\n");    
+    return 0;
+}
