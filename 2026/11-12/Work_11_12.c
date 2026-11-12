@@ -86,7 +86,7 @@
 //    return 0;
 //}
 
-//Q2  26003150217  叶贵骞
+//Q2
 //#include <stdio.h>
 //#include <conio.h>      // 用于 _kbhit() 和 _getch()
 //#include <windows.h>    // 用于 SetConsoleCursorPosition 和开启颜色支持
@@ -183,33 +183,9 @@
 //    printf("\nProgram exited.\n");
 //
 //    return 0;
-//} 
-
-//Q4
-//#include <stdio.h>
-//int findMax(int num1,int num2)
-//{
-//	int max;
-//    if (num1 > num2) 
-//	{
-//        max = num1;
-//    } 
-//	else 
-//	{
-//	    max = num2;
-//    }
-//    return max;
-//}
-//int main() {
-//    int num1 = 0, num2 = 0;
-//    int max = 0;
-//    scanf("%d %d",&num1,&num2);
-//    max = findMax(num1,num2);
-//    printf("The maximum number between %d and %d is %d.\n", num1, num2, max);
-//    return 0;
 //}
 
-//Q4
+//Q3 
 //#include <stdio.h>
 //#include <conio.h>      // 用于 _kbhit() 和 _getch()
 //#include <windows.h>    // 用于 SetConsoleCursorPosition 和开启颜色支持
@@ -345,7 +321,31 @@
 //    printf("\nProgram exited.\n");
 //
 //    return 0;
-//} 
+//}  
+
+//Q4 
+//#include <stdio.h>
+//int findMax(int num1,int num2)
+//{
+//	int max;
+//    if (num1 > num2) 
+//	{
+//        max = num1;
+//    } 
+//	else 
+//	{
+//	    max = num2;
+//    }
+//    return max;
+//}
+//int main() {
+//    int num1 = 0, num2 = 0;
+//    int max = 0;
+//    scanf("%d %d",&num1,&num2);
+//    max = findMax(num1,num2);
+//    printf("The maximum number between %d and %d is %d.\n", num1, num2, max);
+//    return 0;
+//}
 
 //Q5
 //#include<stdio.h>
