@@ -1,0 +1,6 @@
+# 自动检测文本文件，并统一换行符为 LF
+* text=auto eol=lf
+
+# 明确指定 C 语言源代码文件，强制使用 UTF-8 编码和 LF 换行符
+*.c text eol=lf working-tree-encoding=UTF-8
+*.h text eol=lf working-tree-encoding=UTF-8
