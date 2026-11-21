@@ -31,3 +31,7 @@ Release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+# Dev-C++ 5.11 项目文件与编译中间文件
+*.o
+*.dev
+*.layout
